@@ -30,24 +30,24 @@
 <meta property="og:site_name" content="炸薯条🉐躺平">
 <meta property="og:description" content="使用github做图床，VSCode加picgo插件实现markdown中插入图片上传">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830191759.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830193013.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830193102.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830193414.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830193926.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830194212.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230831162010.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230831161045.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230831161313.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230831162724.png">
+<meta property="og:image" content="https://img.shutiao.world/blog/20230830191759.png">
+<meta property="og:image" content="https://img.shutiao.world/blog/20230830193013.png">
+<meta property="og:image" content="https://img.shutiao.world/blog/20230830193102.png">
+<meta property="og:image" content="https://img.shutiao.world/blog/20230830193414.png">
+<meta property="og:image" content="https://img.shutiao.world/blog/20230830193926.png">
+<meta property="og:image" content="https://img.shutiao.world/blog/20230830194212.png">
+<meta property="og:image" content="https://img.shutiao.world/blog/20230831162010.png">
+<meta property="og:image" content="https://img.shutiao.world/blog/20230831161045.png">
+<meta property="og:image" content="https://img.shutiao.world/blog/20230831161313.png">
+<meta property="og:image" content="https://img.shutiao.world/blog/20230831162724.png">
 <meta property="article:published_time" content="2023-08-30T11:09:48.000Z">
-<meta property="article:modified_time" content="2023-08-31T08:37:12.810Z">
+<meta property="article:modified_time" content="2023-09-01T07:34:38.038Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="PicGo">
 <meta property="article:tag" content="Github">
 <meta property="article:tag" content="VSCode">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830191759.png">
+<meta name="twitter:image" content="https://img.shutiao.world/blog/20230830191759.png">
   
   
   
@@ -63,7 +63,7 @@
   
 
   
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830203447.png">
+    <link rel="shortcut icon" href="https://img.shutiao.world/blog/20230830203447.png">
   
 
   
@@ -77,7 +77,7 @@
 <body>
   
 
-<div class="l_cover post"><div class="cover"><div class="lazy img bg" data-bg="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830195238.png"></div></div></div>
+<div class="l_cover post"><div class="cover"><div class="lazy img bg" data-bg="https://img.shutiao.world/blog/20230830195238.png"></div></div></div>
 
 
   <div class='l_body' id='start'>
@@ -86,7 +86,7 @@
 
   
 
-<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/logo.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">炸薯条🉐躺平</div><div class="sub normal cap">太阳每时每刻都是夕阳也都是旭日</div><div class="sub hover cap" style="opacity:0">The sun rises as usual</div></a></div>
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img.shutiao.world/blog/logo.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">炸薯条🉐躺平</div><div class="sub normal cap">太阳每时每刻都是夕阳也都是旭日</div><div class="sub hover cap" style="opacity:0">The sun rises as usual</div></a></div>
 
 <nav class="menu dis-select"></nav>
 </header>
@@ -122,33 +122,33 @@
 <li>项目的相对路径未必是上传后的真实路径，导致每次都要手动编辑地址。比如我的 Blog 中的上传图片的地址是 &#x2F;public&#x2F;image，但 public 到了发布时会被 copy 到根路径，此时自动生成的相对地址就不匹配了。</li>
 </ul>
 <p>于是使用 PicGo 中提供的图床功能将图片放到 GitHub 图床就不用担心图片链接错误了。</p>
-<h2 id="1-在Github中新建一个仓库来作为图床"><a href="#1-在Github中新建一个仓库来作为图床" class="headerlink" title="1 在Github中新建一个仓库来作为图床"></a>1 在Github中新建一个仓库来作为图床</h2><h3 id="1-1-创建仓库"><a href="#1-1-创建仓库" class="headerlink" title="1.1 创建仓库"></a>1.1 创建仓库</h3><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830191759.png" fancybox="true"/></div></div>
+<h2 id="1-在Github中新建一个仓库来作为图床"><a href="#1-在Github中新建一个仓库来作为图床" class="headerlink" title="1 在Github中新建一个仓库来作为图床"></a>1 在Github中新建一个仓库来作为图床</h2><h3 id="1-1-创建仓库"><a href="#1-1-创建仓库" class="headerlink" title="1.1 创建仓库"></a>1.1 创建仓库</h3><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.shutiao.world/blog/20230830191759.png" fancybox="true"/></div></div>
 <div class="tag-plugin note" color="warning"><div class="body"><p>仓库名称自定义，一定要选择公开仓库。</p></div></div>
 <h3 id="1-2-设置token，保留后续使用"><a href="#1-2-设置token，保留后续使用" class="headerlink" title="1.2 设置token，保留后续使用"></a>1.2 设置token，保留后续使用</h3><ul>
 <li>进入github设置，点击左侧选项中最后一个 <strong>Developer settings</strong></li>
 </ul>
-<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830193013.png" fancybox="true"/></div></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.shutiao.world/blog/20230830193013.png" fancybox="true"/></div></div>
 
 <ul>
 <li>之后选择<strong>Personal access tokens</strong>下拉菜单中的<strong>Tokens</strong></li>
 </ul>
-<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830193102.png" fancybox="true"/></div></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.shutiao.world/blog/20230830193102.png" fancybox="true"/></div></div>
 
 <ul>
 <li>Generate new token(classic)</li>
 </ul>
-<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830193414.png" fancybox="true"/></div></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.shutiao.world/blog/20230830193414.png" fancybox="true"/></div></div>
 <ul>
-<li>填写note，选择过期时间，可以选择最后一项，永久有效。下方选项框，只需要勾选<strong>repo</strong><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830193926.png" fancybox="true"/></div></div></li>
+<li>填写note，选择过期时间，可以选择最后一项，永久有效。下方选项框，只需要勾选<strong>repo</strong><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.shutiao.world/blog/20230830193926.png" fancybox="true"/></div></div></li>
 <li>点击页面下方的<strong>Generate token</strong></li>
 <li>生成一串token，注意<mark class="tag-plugin mark" color="warning">token只会显示一次，复制下来记到备忘录</mark></li>
 </ul>
-<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230830194212.png" fancybox="true"/></div></div>
-<h2 id="2-VSCode中配置PiCgo插件"><a href="#2-VSCode中配置PiCgo插件" class="headerlink" title="2 VSCode中配置PiCgo插件"></a>2 VSCode中配置PiCgo插件</h2><h3 id="2-1-下载Picgo插件"><a href="#2-1-下载Picgo插件" class="headerlink" title="2.1 下载Picgo插件"></a>2.1 下载Picgo插件</h3><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230831162010.png" fancybox="true"/></div></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.shutiao.world/blog/20230830194212.png" fancybox="true"/></div></div>
+<h2 id="2-VSCode中配置PiCgo插件"><a href="#2-VSCode中配置PiCgo插件" class="headerlink" title="2 VSCode中配置PiCgo插件"></a>2 VSCode中配置PiCgo插件</h2><h3 id="2-1-下载Picgo插件"><a href="#2-1-下载Picgo插件" class="headerlink" title="2.1 下载Picgo插件"></a>2.1 下载Picgo插件</h3><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.shutiao.world/blog/20230831162010.png" fancybox="true"/></div></div>
 <p><strong>点击安装即可</strong></p>
-<h3 id="2-2-设置Picgo"><a href="#2-2-设置Picgo" class="headerlink" title="2.2 设置Picgo"></a>2.2 设置Picgo</h3><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230831161045.png" fancybox="true"/></div></div>
+<h3 id="2-2-设置Picgo"><a href="#2-2-设置Picgo" class="headerlink" title="2.2 设置Picgo"></a>2.2 设置Picgo</h3><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.shutiao.world/blog/20230831161045.png" fancybox="true"/></div></div>
 <p>下拉找到Github相关的设置，只需要填写这一部分即可</p>
-<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230831161313.png" fancybox="true"/></div></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.shutiao.world/blog/20230831161313.png" fancybox="true"/></div></div>
 <ul>
 <li>Current选择Github</li>
 <li>Branch分支一般默认就填main</li>
@@ -158,7 +158,7 @@
 <li>最后Token填写上面我们复制的Token<br><strong>至此，所有配置都已完成</strong></li>
 </ul>
 <h2 id="3-完成测试"><a href="#3-完成测试" class="headerlink" title="3 完成测试"></a>3 完成测试</h2><div class="tag-plugin note" ><div class="title">可以截图在VSCode中用快捷键“Ctrl+Alt+U”来测试是否成功</div><div class="body"><p>配置没出错上传图片会弹出如下提示</p></div></div>
-<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/TRAVISZHAN/images/blog/20230831162724.png" fancybox="true"/></div></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.shutiao.world/blog/20230831162724.png" fancybox="true"/></div></div>
 
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
